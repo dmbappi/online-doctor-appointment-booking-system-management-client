@@ -4,7 +4,7 @@ import React from "react";
 
 const InfoCard = ({img, cardTitle, cardDetails,bgClass}) => {
   return (
-    <div class={`card lg:card-side bg-base-100 shadow-xl ${bgClass}`}>
+    <div className={`card lg:card-side bg-base-100 shadow-xl ${bgClass}`}>
       <figure className='pl-5 pt-5'>
         <img src={img} alt="Album" />
       </figure>
