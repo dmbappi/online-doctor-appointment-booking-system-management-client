@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../Home/Banner';
 import Footer from '../Shared/Footer';
 
-const About = () => {
+const Review = () => {
     return (
         <div>
             <Banner></Banner>
@@ -11,4 +11,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Review;
