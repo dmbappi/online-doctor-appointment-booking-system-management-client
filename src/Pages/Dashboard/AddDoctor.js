@@ -12,7 +12,7 @@ const AddDoctor = () => {
   } = useForm();
 
   const { data: services, isLoading } = useQuery("services", () =>
-    fetch("http://localhost:8000/service").then((res) => res.json())
+    fetch("https://drappointment.wada.com.bd/service").then((res) => res.json())
   );
 
   const imageStorageKey = '6d8f22cddb490a91adf0a16dcbfcf77c'; 
@@ -36,7 +36,7 @@ const AddDoctor = () => {
                     img:img
                 }
                 //send to your database
-                fetch('http://localhost:8000/doctor',{
+                fetch('https://drappointment.wada.com.bd/doctor',{
                     method: 'POST',
                     headers:{
                         'content-type': 'application/json',

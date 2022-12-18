@@ -6,7 +6,7 @@ const useAdmin = user => {
     useEffect( () =>{
         const email = user?.email;
         if(email){
-            fetch(`http://localhost:8000/admin/${email}`, {
+            fetch(`https://drappointment.wada.com.bd/admin/${email}`, {
                 method:'GET',
                 headers: {
                     'content-type': 'application/json',

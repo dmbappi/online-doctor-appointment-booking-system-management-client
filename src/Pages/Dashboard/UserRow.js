@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 const UserRow = ({ user, refetch }) => {
 //   const { email } = user;
 //   const makeAdmin = () => {
-//     fetch(`http://localhost:8000/user/admin/${email}`, {
+//     fetch(`https://drappointment.wada.com.bd/user/admin/${email}`, {
 //       method: "PUT",
 //       headers: {
 //         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -17,7 +17,7 @@ const UserRow = ({ user, refetch }) => {
 //   };
   const { email, role } = user;
   const makeAdmin = () => {
-      fetch(`http://localhost:8000/user/admin/${email}`, {
+      fetch(`https://drappointment.wada.com.bd/user/admin/${email}`, {
           method: 'PUT',
           headers: {
               authorization: `Bearer ${localStorage.getItem('accessToken')}`

@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import UserRow from './UserRow';
 
 const Users = () => {
-    const { data: users, isLoading,refetch } = useQuery('users', () => fetch('http://localhost:8000/user', {
+    const { data: users, isLoading,refetch } = useQuery('users', () => fetch('https://drappointment.wada.com.bd/user', {
         method: 'GET',
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
